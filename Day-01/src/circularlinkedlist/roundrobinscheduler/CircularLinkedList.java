@@ -78,6 +78,11 @@ class CircularLinkedList {
             temp = temp.next;
         }
 
+        if(count==0){
+            System.out.println("Invalid");
+            return ;
+        }
+
         System.out.println("Average Waiting Time: " + (totalWaitingTime / count));
         System.out.println("Average Turnaround Time: " + (totalTurnaroundTime / count));
     }
